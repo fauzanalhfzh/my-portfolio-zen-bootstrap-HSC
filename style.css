@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+/* Variables */
+:root{
+  --primary-color: #ffc857;
+  --dark-color:#0f0f0f;
+  --gray-color: gray;
+
+  --h1-font-size:40px;
+  --h2-font-size:32px;
+  --small-font-size:14px;
+}
+
+/* reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Global CSS */
+section {
+  padding: 70px 0;
+}
+
+section .section-title {
+  font-size: var(--h2-font-size);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.btn-yellow{
+  background-color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn-yellow-secondary{
+  border: 2px solid var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn-yellow:hover{
+  border-color: var(--primary-color);
+}
+
+.text-yellow{
+  color: var(--primary-color);
+}
+
+.text-dark{
+  color: var(--dark-color);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* navbar */
+.navbar .nav-item .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* header  */
+.header-section .header-title{
+  font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill{
+  color: var(--dark-color);
+}
+.header-section .header-skill:hover{
+  color: var(--primary-color);
+}
+
+.header-section .header-skill i{
+  transition: .3s;
+}
+.header-section .header-skill:hover i{
+  transform: rotate(-45deg);
+}
+
+.header-section .header-img {
+  width: 100%;
+}
+
+/* Portfolio */
+.portfolio-section{
+  background-color:var(--primary-color);
+}
+
+.portfolio-section .card .card-img-top{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+  .portfolio-section .card a{
+    margin: 4px;
+    font-size: 12px;
+  } 
+  .portfolio-section .card {
+    font-size: 14px;
+  } 
+  
+}
+
+/* skills */
+
+.skills-section{
+  background-color: var(--primary-color);
+}
+
+.skills-section .progress-bar{
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--gray-color);
+}
+
+.skills-section .progress-bar .progress{
+  background-color: white;
+}
+
+/* news */
+.news-section .card .card-img-top{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width:768px){
+  .news-section .card p{
+    font-size: 14px;
+  }
+
+  .news-section .card a{
+    font-size: 12px;
+  }
+
+
+}
